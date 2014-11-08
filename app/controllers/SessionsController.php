@@ -10,7 +10,7 @@ class SessionsController extends \BaseController {
 	public function store()
 	{
         if(Auth::attempt(Input::only(['email', 'password']), Input::get('remember_me'), true)) {
-            return Redirect::route('sessions.index');
+            return Redirect::to('/');
         }
 
         return Redirect::route('sessions.create')->withInput(Input::all());
