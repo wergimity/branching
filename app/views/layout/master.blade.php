@@ -12,6 +12,7 @@
     {{ HTML::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css') }}
     {{ HTML::script('//code.jquery.com/jquery-1.11.0.min.js') }}
     {{ HTML::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js') }}
+    @yield('head')
   </head>
 
   <body>
