@@ -17,9 +17,11 @@ class SessionsController extends \BaseController {
 	}
 
 
-	public function destroy($id)
+	public function logout()
 	{
+        Auth::logout();
 
+        return Redirect::to('/');
 	}
 
 
